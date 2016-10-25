@@ -1,0 +1,69 @@
+#header
+{
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    min-width: 100%;
+    margin-top: 2em;
+    padding: 0 2em;
+    .logo
+    {
+        max-width: 260px;
+        img
+        {
+            // We don't want this to exceed the maximum indended size of the logo
+            max-width: 260px;
+        }
+    }
+    .menu
+    {
+        margin-top: .6em;
+        ul
+        {
+            margin: 0;
+            padding: 0;
+
+            list-style: none;
+            li
+            {
+                font-weight: bold;
+
+                display: inline-block;
+
+                text-transform: uppercase;
+                a
+                {
+                    line-height: 1em;
+
+                    text-decoration: none;
+
+                    opacity: .6;
+                    color: $color-white;
+                    &:after
+                    {
+                        padding: 0 6px;
+
+                        content: url('../img/menu-separator.png');
+                    }
+                    &:hover
+                    {
+                        opacity: 1;
+                    }
+                }
+                &:last-of-type > a:after
+                {
+                    padding: 0;
+
+                    content: none;
+                }
+                &:first-of-type > a
+                {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+html,
+body
+{
+    width: 100%;
+    height: 100%;
+}
+
+body
+{
+    font-family: $font-ubuntu;
+    /* Set a default font size to 16, 14px just does 
+     * not seem big enough. Converting pixels to ems 
+     * and rems made easy :D
+     *
+     * 100px = 6.25em
+     *  80px = 5em
+     *  60px = 3.75em
+     *  50px = 3.125em
+     *  48px = 3em
+     *  40px = 2.5em
+     *  20px = 1.25em
+     *  14px = 0.875em
+     *  12px = 0.75em
+     *  10px = 0.625em
+     *   8px = 0.5em
+     *   6px = 0.375em
+     */
+    font-size: $root-font-size;
+
+    background-color: $color-grey;
+
+    font-color: $color-white;
+}
+
+/* 
+ * VIDEO TAG IN THE OLDER IEs
+ * Not only does IE8 not recognize the <video> tag, it fails to recognize any 
+ * HTML5 at all, ignoring every new element in the spec. This is problematic, 
+ * as we want to be able to at least style the element  in  the  browser  and 
+ * place a background image in it. To do so, we need two things:
+ * a single line of JavaScript, inside a conditional comment:
+ 
+    <!--[if lt IE 9]>
+    <script>
+        document.createElement('video');
+    </script>
+    <![endif]-->
+
+ * And a declaration that allows IE to understand that this is a block-level 
+ * element:
+ */
+video
+{
+    /* allows IE to understand that this is a block-level element */
+    display: block;
+}

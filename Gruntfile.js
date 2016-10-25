@@ -21,7 +21,7 @@ module.exports = function( grunt ) {
 			      livereload: true
 		    },
 			css: {
-				files: 'src/**/*.scss',
+				files: '**/*.scss',
 				tasks: ['sass']
 			},
 			html: {

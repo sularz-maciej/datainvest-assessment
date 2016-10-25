@@ -1,0 +1,42 @@
+#zip-container
+{
+    font-weight: bold;
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    width: 9em;
+    height: 60%;
+    margin: -4.5em;
+
+    text-align: center;
+    text-transform: uppercase;
+    .text
+    {
+        margin-bottom: .75em;
+    }
+    .slider
+    {
+        margin-bottom: .75em;
+    }
+    .zip,
+    .scroll-progress
+    {
+        width: .75em;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .scroll-progress
+    {
+        height: 10%;
+
+        border: none;
+        border-radius: 0;
+        background-color: $color-yellow;
+    }
+    .zip
+    {
+        background-color: rgba(0,0,0,.4);
+    }
+}
