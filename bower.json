@@ -3,7 +3,7 @@
   "description": "An assessment project for Data Invest Sp. z o.o. S.K.A.",
   "main": "src/index.html",
   "authors": [
-    "Maciej Sularz"
+    "Maciej Sularz <sularz.maciej@gmail.com>"
   ],
   "license": "ISC",
   "homepage": "https://github.com/sularz-maciej/datainvest-assessment",

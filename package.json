@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/sularz-maciej/datainvest-assessment/issues"
   },
-  "homepage": "https://github.com/sularz-maciej/datainvest-assessment#readme"
+  "homepage": "https://github.com/sularz-maciej/datainvest-assessment#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
 }
