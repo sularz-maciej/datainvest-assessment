@@ -1,0 +1,19 @@
+{
+  "name": "datainvest-assessment",
+  "version": "1.0.0",
+  "description": "An assessment project for Data Invest Sp. z o.o. S.K.A.",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sularz-maciej/datainvest-assessment.git"
+  },
+  "author": "Maciej Sularz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sularz-maciej/datainvest-assessment/issues"
+  },
+  "homepage": "https://github.com/sularz-maciej/datainvest-assessment#readme"
+}
