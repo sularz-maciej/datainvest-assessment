@@ -17,6 +17,7 @@
   ],
   "dependencies": {
     "skrollr": "^0.6.30",
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "normalize-css": "^5.0.0"
   }
 }

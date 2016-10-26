@@ -47,15 +47,19 @@
     }
 }
 
-// Stuff related to the animation
+// Stuff related to the animation (partly)
+// it is a bit all over the place. Perhaps
+// In the future we could extract everything
+// related to the skrollr in order to have it
+// in one place? It would make adding slides
+// a breeze!
 @import 'i-can-fly';
 
 #slide-1
 {
     overflow: hidden; // important, the bgvid will overflow otherwise
-    // Using the very first frame of the background video here
 
-    background: url('../img/bgvid.png') no-repeat center center;
+    background: url('../img/bgvid.png') no-repeat center center; // Using the very first frame of the background video here
     background-size: cover;
     .caption
     {
@@ -65,6 +69,8 @@
 
 #slide-2
 {
+    // Offset the slide so that it is not stacked up with other slides.
+    // This allows skrollr.js to do the magic! Play with it gently.
     -webkit-transform: translate(0, 100%);
        -moz-transform: translate(0, 100%);
         -ms-transform: translate(0, 100%);
@@ -73,22 +79,6 @@
     .row
     {
         height: 100%;
-    }
-}
-
-#go-up
-{
-    position: absolute;
-    bottom: 4em;
-    left: 50%;
-
-    width: 70px;
-    height: 70px;
-    margin-left: -35px;
-    & > img
-    {
-        width: 100%;
-        height: auto;
     }
 }
 

@@ -28,12 +28,15 @@
         .slider
         {
             margin-bottom: .75em;
+            // Again! Retina business...
 
-            background: url('../img/zip-white.png') no-repeat center center;
-            & > image
+            background: url('../img/zip-white@2x.png') no-repeat center center;
+            background-size: 30px 47px;
+            & > img
             {
-                width: 30px;
-                height: 47px;
+                // Retina business.
+                max-width: 30px;
+                max-height: 47px;
 
                 opacity: 1;
             }

@@ -1,21 +1,28 @@
 #header
 {
-    position: fixed;
-    z-index: 500;
+    position: fixed; // We want it to stay in one place the whole time, don't we?
+    z-index: 500; // I honestly don't know why it's 500 and not f/e 699 xD
     top: 0;
     left: 0;
 
     width: 100%;
     min-width: 100%;
-    margin-top: -5em; // hide initially
+    // Hide the header initially, allow skrollr to animate it. 
+    // It shows through our awesome YELLOW welcome slide otherwise ;-(
+    margin-top: -5em;
     padding: 0 2em;
     .logo
     {
         max-width: 260px;
         img
         {
-            // We don't want this to exceed the maximum indended size of the logo
-            max-width: 260px;
+            // We don't want this to exceed the maximum 
+            // indended size of the logo. Again using
+            // oversized image here to maintain the 
+            // crispness of the logo on high density
+            // screens - retina business.
+            width: 100%;
+            height: auto;
         }
     }
     .menu
@@ -53,6 +60,7 @@
                         opacity: 1;
                     }
                 }
+                // Removes menu separator from the last menu item
                 &:last-of-type > a:after
                 {
                     padding: 0;

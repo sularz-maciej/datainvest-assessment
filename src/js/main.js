@@ -1,8 +1,8 @@
 /*
 * @Author: Maciej Sularz
 * @Date:   2016-10-26 01:53:37
-* @Last Modified by:   Maciej Sularz
-* @Last Modified time: 2016-10-26 21:47:54
+* @Last Modified by:   Maciej
+* @Last Modified time: 2016-10-26 22:26:10
 */
 
 ( function( $ ){
@@ -10,7 +10,9 @@
 	// Well lets instantiate the MAGIC!
 	skrollr.init();
 
-
+	/**
+	 * Scroll to top button, a clever one :D
+	 */
 	$( '#go-up' ).click(function( e ){
 		e.preventDefault();
 
@@ -40,6 +42,7 @@
 		 */ 
 		var scrollToPosition = wh + ( wh * .1 ); // Adding 10% to compensate for the breakpoint :-)
 
+		// Because I can
 		console.log('Wheeeeeee :D What a ride! Again! Again! Please!');
 
 		$("html, body").animate({ scrollTop: scrollToPosition }, 
@@ -54,9 +57,7 @@
 	/** 
 	 * Little helper info box that displays current scroll position 
 	 * in percentage. Helps debugging and working on breakpoints for 
-	 * the animations. 
-	 *
-	 * uncomment the code below and you're good to go :D
+	 * the animations.
 	 */
 	var $iCanFlyHelperInfo = $('#i-can-fly-helper-info');
 	if( $iCanFlyHelperInfo.length > 0 && $iCanFlyHelperInfo[0].hasAttribute("enabled") ){

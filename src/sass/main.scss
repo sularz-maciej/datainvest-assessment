@@ -1,12 +1,24 @@
+/**
+ * I LOVE IT WHEN A STYLE COMES TOGETHER!
+ * 
+ * 					John "Hannibal" Smith
+ */
+
+// The site has not been optimized for mobile devices
+// nor testet in a variety of different browsers!
+// 
+// This is just the initial version and would require
+// more time to optimize and polsih it off.
+// 
 // Variables
 @import 'variables';
 
 // Global styling
 @import 'components/global';
 
-
 // Components styling
 @import 'components/header';
 @import 'components/slides';
 @import 'components/bgvid';
 @import 'components/zip';
+@import 'components/go-up';

@@ -1,4 +1,4 @@
-video#bgvid
+#bgvid
 {
     position: absolute;
     top: 50%;
@@ -8,12 +8,16 @@ video#bgvid
     min-width: 100%;
     height: auto;
     min-height: 100%;
+    // We are making sure here that the element stays in the middle 
+    // of the viewport. We have positioned it absolutely to the 50% 
+    // of the viewport so now we need to offset it in order to center
+    // it.
 
     -webkit-transform: translate(-50%, -50%);
        -moz-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
 
-    background: url('../img/bgvid.png') no-repeat;
+    background: url('../img/bgvid.png') no-repeat; // Just a safety measure should the video not play
     background-size: cover;
 }

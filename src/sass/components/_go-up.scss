@@ -1,0 +1,15 @@
+#go-up // Ok! I'm going :P
+{
+    position: absolute;
+    bottom: 4em;
+    left: 50%;
+
+    width: 70px;
+    height: 70px;
+    margin-left: -35px;
+    & > img
+    {
+        width: 100%; // Scale the oversized image to fit the container.
+        height: auto;
+    }
+}

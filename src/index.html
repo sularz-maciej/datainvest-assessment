@@ -13,6 +13,10 @@
 
         <link href="https://fonts.googleapis.com/css?family=Days+One|Ubuntu" rel="stylesheet">
         
+        <!-- 
+          Use grunt to concatenate all vendor styles into 
+          one - vendor.css file to reduce http requests 
+        -->
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
@@ -23,6 +27,9 @@
 
         <!--[if lt IE 9]>
         <script>
+          // Using CSS we will give it display: block property
+          // as a way to work around the fact that IE does not
+          // support the video element. 
           document.createElement('video');
         </script>
         <![endif]-->
@@ -33,67 +40,43 @@
         <![endif]-->
 
         <!-- header -->
-        <header id="header"
-          data-0="margin-top: -5em"
-          data-105p=""
-          data-110p="margin-top: 2em"
-        >
+        <header id="header" data-0="margin-top: -5em" data-105p="" data-110p="margin-top: 2em">
           <div class="logo pull-left">
             <a href="/">
-              <!-- using an oversized logo in order to assure superb 
-                   quality on displays with higher pixel density -->
+              <!-- 
+                using an oversized logo in order to assure superb 
+                quality on displays with higher pixel density (retina, 4k)
+              -->
               <img src="img/logo@2x.png" alt="Airbot logo image.">
             </a>
           </div>
           <nav class="menu pull-right">
             <ul>
               <li>
-                <a href="#">
-                  Home
-                </a>
+                <a href="#">Home</a>
               </li>
               <li>
-                <a href="#"
-                  data-0="opacity: .6"
-                  data-210p=""
-                  data-220p="opacity: 1"
-                >
+                <a href="#" data-0="opacity: .6" data-210p="" data-220p="opacity: 1">
                   About Us
                 </a>
               </li>
               <li>
-                <a href="#"
-                  data-0="opacity: .6"
-                  data-230p=""
-                  data-240p="opacity: 1"
-                >
+                <a href="#" data-0="opacity: .6" data-230p="" data-240p="opacity: 1" >
                   Milestones
                 </a>
               </li>
               <li>
-                <a href="#"
-                  data-0="opacity: .6"
-                  data-250p=""
-                  data-260p="opacity: 1"
-                >
+                <a href="#" data-0="opacity: .6" data-250p="" data-260p="opacity: 1">
                   Airbot Labs
                 </a>
               </li>
               <li>
-                <a href="#"
-                  data-0="opacity: .6"
-                  data-270p=""
-                  data-280p="opacity: 1"
-                >
+                <a href="#" data-0="opacity: .6" data-270p="" data-280p="opacity: 1">
                   Business Oportunities
                 </a>
               </li>
               <li>
-                <a href="#"
-                  data-0="opacity: .6"
-                  data-290p=""
-                  data-300p="opacity: 1"
-                >
+                <a href="#" data-0="opacity: .6" data-290p="" data-300p="opacity: 1">
                   Contact
                 </a>
               </li>
@@ -103,33 +86,22 @@
         <!-- /header -->
         <div id="page-content">
           <div id="slides-container">
-            <div id="slides"
-              data-0="transform:translate(0%,0%);"
-              data-200p=""
-              data-300p="transform:translate(0%,-100%);"
-            >
-
+            <div id="slides" data-0="transform:translate(0%,0%)" 
+                 data-200p="" data-300p="transform:translate(0%,-100%)">
               <!-- slide 0 -->
-              <div id="i-can-fly" class="slide"
-                data-0="transform: translate3d(0px, 0px, 0px)"
-                data-100p="transform: translate3d(0px, 35px, 500px)"
-              ></div>
+              <div id="i-can-fly" class="slide" data-0="transform: translate3d(0px, 0px, 0px)" 
+                   data-100p="transform: translate3d(0px, 35px, 500px)"></div>
               <!-- /slide 0 -->
-
               <!-- slide 1 -->
               <div id="slide-1" class="slide">
                 <video playsinline autoplay muted loop poster="img/bgvid.png" id="bgvid">
+                    <!-- There once was a bug in Chrome concerning webm source placed 
+                         after other sources. So it grabs the first spot. -->
                     <source src="media/bgvid.webm" type="video/webm">
                     <source src="media/bgvid.mp4" type="video/mp4">
                 </video>
-                <div class="caption"
-                  data-0="margin-left: -52em"
-                  data-100p=""
-                  data-110p="margin-left: 2em"
-                >
-                  <h1>
-                    We provide exciting<br />and immersive experiences
-                  </h1>
+                <div class="caption" data-0="margin-left: -52em" data-100p="" data-110p="margin-left: 2em">
+                  <h1>We provide exciting<br />and immersive experiences</h1>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales purus eu dignissim condimentum. 
                     Phasellus mollis posuere imperdiet. Pellentesque habitant morbi tristique senectus et netus et malesuada 
@@ -138,11 +110,13 @@
                 </div>
                 <div id="zip-container">
                   <div class="slider-container">
-                    <div class="text" data-0="color: rgb(0,0,0)" data-84p="" data-85p="color: rgb(255,255,255)">
+                    <div class="text" data-0="color: rgb(0,0,0)" 
+                         data-84p="" data-85p="color: rgb(255,255,255)">
                       Scroll Down
                     </div>
                     <div class="slider">
-                      <img src="img/zip-black.png" alt="Slider" data-0="opacity: 1" data-88p="" data-89p="opacity: 0">
+                      <img src="img/zip-black@2x.png" alt="Slider" 
+                           data-0="opacity: 1" data-88p="" data-89p="opacity: 0">
                     </div>
                   </div>
                   <div class="zip" data-0="opacity: 0" data-96p=""  data-97p="opacity: 1">
@@ -155,11 +129,12 @@
                 </div>
               </div>
               <!-- /slide 1 -->
-
               <!-- slide 2 -->
               <div id="slide-2" class="slide">
                 <div class="container-fluid">
                   <div class="row">
+                    <!-- When optimizing the site to be responsive these will have to occupy 50% 
+                         of the container height, otherwise one will be pushed out from the viewport -->
                     <div class="col-md-6" id="contact">
                       <form action="#">
                         <div class="form-group">
@@ -182,7 +157,8 @@
                   </div>
                 </div>
                 <a href="#" id="go-up">
-                  <!-- Don't want to scroll? No PRAAABLEM! -->
+                  <!-- Don't want to scroll all the way up? No PRAAABLEM! 
+                       Just clicke me relax :D -->
                   <img src="img/go-to-top@2x.png" alt="Go back to top">
                 </a>
               </div>
@@ -190,30 +166,24 @@
             </div>
           </div>
         </div>
-
-
-        
         <!-- 
           That just helps to work with breakpoints and percentages
           for the skrollr :D To activate it just add 'enabled' attribute 
           to the div below (#i-can-fly-helper-info). All related JS can
           be found in the js/main.js file. Happy breakpointing!
         -->
-        <div id="i-can-fly-helper-info" enabled>0</div>
+        <div id="i-can-fly-helper-info">0</div>
         <div id="i-can-fly-helper">
             <div class="marker"></div>
             <div class="marker"></div>
             <div class="marker"></div>
             <div class="marker"></div>
         </div>
-
+        
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
+        <!-- Same story here either concatenate or use a tool like require.js or browserify -->
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/vendor/skrollr.min.js"></script>
-        <script>
-          
-        </script>
 
         <script src="js/main.js"></script>
         <script src="js/map.js"></script>
