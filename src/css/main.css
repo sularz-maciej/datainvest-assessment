@@ -28,8 +28,8 @@ body {
    *   6px = 0.375em
    */
   font-size: 16px;
-  background-color: #323232;
-  font-color: #fff; }
+  color: #fff;
+  background-color: #323232; }
 
 /* 
  * VIDEO TAG IN THE OLDER IEs
@@ -171,9 +171,6 @@ video {
     margin-left: -52em; }
 
 #slide-2 {
-  -webkit-transform: translate(0, 100%);
-  -moz-transform: translate(0, 100%);
-  -ms-transform: translate(0, 100%);
   transform: translate(0, 100%); }
   #slide-2 .container-fluid,
   #slide-2 .row {
@@ -237,8 +234,7 @@ video {
 
 #map {
   height: 100%;
-  padding: 0;
-  weight: 100%; }
+  padding: 0; }
   #map .address {
     position: absolute;
     z-index: 999;
@@ -267,7 +263,6 @@ video {
   height: auto;
   min-height: 100%;
   -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   background: url("../img/bgvid.png") no-repeat;

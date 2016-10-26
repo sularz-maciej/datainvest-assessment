@@ -71,10 +71,7 @@
 {
     // Offset the slide so that it is not stacked up with other slides.
     // This allows skrollr.js to do the magic! Play with it gently.
-    -webkit-transform: translate(0, 100%);
-       -moz-transform: translate(0, 100%);
-        -ms-transform: translate(0, 100%);
-            transform: translate(0, 100%);
+    transform: translate(0, 100%);
     .container-fluid,
     .row
     {
@@ -181,8 +178,6 @@
 {
     height: 100%;
     padding: 0;
-
-    weight: 100%;
     .address
     {
         position: absolute;
