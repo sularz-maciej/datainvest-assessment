@@ -132,19 +132,30 @@ video {
   z-index: 999999;
   top: 0;
   left: 0;
-  width: 25px;
+  visibility: hidden;
+  width: 5px;
   height: 400%; }
   #i-can-fly-helper .marker {
     width: 100%;
     height: 25%; }
-  #i-can-fly-helper .red {
-    background-color: red; }
-  #i-can-fly-helper .green {
-    background-color: green; }
-  #i-can-fly-helper .blue {
-    background-color: blue; }
-  #i-can-fly-helper .yellow {
-    background-color: yellow; }
+    #i-can-fly-helper .marker:nth-child(4n+1) {
+      background-color: red; }
+    #i-can-fly-helper .marker:nth-child(4n+2) {
+      background-color: green; }
+    #i-can-fly-helper .marker:nth-child(4n+3) {
+      background-color: blue; }
+    #i-can-fly-helper .marker:nth-child(4n+4) {
+      background-color: yellow; }
+
+#i-can-fly-helper-info {
+  position: fixed;
+  z-index: 9999;
+  top: 80px;
+  left: 45px;
+  visibility: hidden;
+  padding: 20px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5); }
 
 #slide-1 {
   overflow: hidden;
@@ -158,10 +169,99 @@ video {
   -moz-transform: translate(0, 100%);
   -ms-transform: translate(0, 100%);
   transform: translate(0, 100%); }
-  #slide-2 .contact {
-    background: blue; }
-  #slide-2 .map {
-    background: red; }
+  #slide-2 .container-fluid,
+  #slide-2 .row {
+    height: 100%; }
+
+#go-up {
+  position: absolute;
+  bottom: 4em;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin-left: -35px; }
+  #go-up > img {
+    width: 100%;
+    height: auto; }
+
+#contact {
+  height: 100%;
+  background: url("../img/dark-stick-with-a-circle.png") no-repeat 20% 0; }
+  #contact form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30em;
+    height: 11.875em;
+    margin-top: -6em;
+    margin-left: -15em; }
+    #contact form input,
+    #contact form button {
+      height: 3.375em;
+      text-transform: uppercase;
+      color: #f2d543;
+      border-radius: 0;
+      background: transparent;
+      background-color: transparent;
+      text-shadow: none; }
+    #contact form label {
+      font-family: "Days One", sans-serif;
+      font-size: 3.2em;
+      width: 100%;
+      text-align: center;
+      text-transform: uppercase; }
+    #contact form button {
+      padding: 1em 2em;
+      border-color: #f2d543; }
+      #contact form button i {
+        margin-left: .5em; }
+      #contact form button:hover {
+        color: #f5e073;
+        border-color: #f5e073; }
+    #contact form input {
+      border: none;
+      background-color: #232323; }
+      #contact form input:focus {
+        box-shadow: 0 0 5px #f2d543; }
+      #contact form input::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        text-transform: uppercase;
+        color: #f2d543; }
+      #contact form input::-moz-placeholder {
+        /* Firefox 19+ */
+        text-transform: uppercase;
+        color: #f2d543; }
+      #contact form input:-ms-input-placeholder {
+        /* IE 10+ */
+        text-transform: uppercase;
+        color: #f2d543; }
+      #contact form input:-moz-placeholder {
+        /* Firefox 18- */
+        text-transform: uppercase;
+        color: #f2d543; }
+
+#map {
+  height: 100%;
+  padding: 0;
+  weight: 100%; }
+  #map .address {
+    position: absolute;
+    z-index: 999;
+    bottom: 10em;
+    left: 3em;
+    width: 35%;
+    padding: 2em;
+    border-left: 0.375em solid #f2d543;
+    background-color: rgba(0, 0, 0, 0.6); }
+    #map .address a {
+      text-decoration: none;
+      color: #f2d543; }
+      #map .address a[href*='tel'] {
+        color: #fff; }
+
+#map-container {
+  width: 100%;
+  height: 100%; }
 
 video#bgvid {
   position: absolute;
@@ -181,11 +281,11 @@ video#bgvid {
 #zip-container {
   font-weight: bold;
   position: absolute;
-  z-index: 100;
+  z-index: 999;
   bottom: 0;
   left: 50%;
   width: 9em;
-  height: 50%;
+  height: 45%;
   margin: 0 -4.5em;
   text-align: center;
   text-transform: uppercase; }
@@ -194,10 +294,15 @@ video#bgvid {
     min-height: 5.375em; }
     #zip-container .slider-container .text {
       z-index: 10;
-      margin-bottom: .75em; }
+      margin-bottom: .75em;
+      color: #000; }
     #zip-container .slider-container .slider {
-      z-index: 10;
-      margin-bottom: .75em; }
+      margin-bottom: .75em;
+      background: url("../img/zip-white.png") no-repeat center center; }
+      #zip-container .slider-container .slider > image {
+        width: 30px;
+        height: 47px;
+        opacity: 1; }
   #zip-container .zip,
   #zip-container .scroll-progress {
     z-index: 5;
@@ -210,6 +315,7 @@ video#bgvid {
     background-color: #f2d543; }
   #zip-container .zip {
     height: 80%;
+    opacity: 0;
     background-color: rgba(0, 0, 0, 0.4); }
 
 /*# sourceMappingURL=main.css.map */

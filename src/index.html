@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -32,7 +33,7 @@
         <![endif]-->
 
         <!-- header -->
-        <div id="header"
+        <header id="header"
           data-0="margin-top: -5em"
           data-105p=""
           data-110p="margin-top: 2em"
@@ -44,18 +45,61 @@
               <img src="img/logo@2x.png" alt="Airbot logo image.">
             </a>
           </div>
-          <div class="menu pull-right">
+          <nav class="menu pull-right">
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Milestones</a></li>
-              <li><a href="#">Newswire</a></li>
-              <li><a href="#">Airbot Labs</a></li>
-              <li><a href="#">Business Oportunities</a></li>
-              <li><a href="#">Contact</a></li>
+              <li>
+                <a href="#">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  data-0="opacity: .6"
+                  data-210p=""
+                  data-220p="opacity: 1"
+                >
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  data-0="opacity: .6"
+                  data-230p=""
+                  data-240p="opacity: 1"
+                >
+                  Milestones
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  data-0="opacity: .6"
+                  data-250p=""
+                  data-260p="opacity: 1"
+                >
+                  Airbot Labs
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  data-0="opacity: .6"
+                  data-270p=""
+                  data-280p="opacity: 1"
+                >
+                  Business Oportunities
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  data-0="opacity: .6"
+                  data-290p=""
+                  data-300p="opacity: 1"
+                >
+                  Contact
+                </a>
+              </li>
             </ul>
-          </div>
-        </div>
+          </nav>
+        </header>
         <!-- /header -->
         <div id="page-content">
           <div id="slides-container">
@@ -68,7 +112,7 @@
               <!-- slide 0 -->
               <div id="i-can-fly" class="slide"
                 data-0="transform: translate3d(0px, 0px, 0px)"
-                data-100p="transform: translate3d(0px, 85px, 500px)"
+                data-100p="transform: translate3d(0px, 35px, 500px)"
               ></div>
               <!-- /slide 0 -->
 
@@ -94,14 +138,14 @@
                 </div>
                 <div id="zip-container">
                   <div class="slider-container">
-                    <div class="text">
+                    <div class="text" data-0="color: rgb(0,0,0)" data-84p="" data-85p="color: rgb(255,255,255)">
                       Scroll Down
                     </div>
                     <div class="slider">
-                      <img src="img/zip-white.png" alt="Slider">
+                      <img src="img/zip-black.png" alt="Slider" data-0="opacity: 1" data-88p="" data-89p="opacity: 0">
                     </div>
                   </div>
-                  <div class="zip">
+                  <div class="zip" data-0="opacity: 0" data-96p=""  data-97p="opacity: 1">
                     <div class="scroll-progress"
                       data-0="height: 10%";
                       data-100p=""
@@ -114,44 +158,68 @@
 
               <!-- slide 2 -->
               <div id="slide-2" class="slide">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-md-6 contact">
-                    asdf
-                  </div>
-                  <div class="col-md-6 map">
-                    asdf
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-6" id="contact">
+                      <form action="#">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Stay In Touch</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" placeholder= "Your E-Mail">
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+                      </form>
+                    </div>
+                    <div class="col-md-6" id="map">
+                      <address class="address">
+                        ul. Włocławska 161<br />
+                        87-100 Toruń<br />
+                        Poland<br /><br />
+                        <a href="tel:+48695810356">+48 695 810 356</a><br />
+                        <a href="mailto:contact@airbot.io">contact@airbot.io</a>
+                      </address>
+                      <div id="map-container"></div>
+                    </div>
                   </div>
                 </div>
-              </div>
+                <a href="#" id="go-up">
+                  <!-- Don't want to scroll? No PRAAABLEM! -->
+                  <img src="img/go-to-top@2x.png" alt="Go back to top">
+                </a>
               </div>
               <!-- /slide 2 -->
-
             </div>
           </div>
         </div>
 
 
         
-        <!-- That just helps to see scroll progress -->
+        <!-- 
+          That just helps to work with breakpoints and percentages
+          for the skrollr :D To activate it just add 'enabled' attribute 
+          to the div below (#i-can-fly-helper-info). All related JS can
+          be found in the js/main.js file. Happy breakpointing!
+        -->
+        <div id="i-can-fly-helper-info" enabled>0</div>
         <div id="i-can-fly-helper">
-            <div class="marker red"></div>
-            <div class="marker green"></div>
-            <div class="marker blue"></div>
-            <div class="marker yellow"></div>
+            <div class="marker"></div>
+            <div class="marker"></div>
+            <div class="marker"></div>
+            <div class="marker"></div>
         </div>
-
-
 
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/vendor/skrollr.min.js"></script>
         <script>
-          var s = skrollr.init();
+          
         </script>
 
         <script src="js/main.js"></script>
+        <script src="js/map.js"></script>
+        <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBajk3fvOhhXXG7ZyYjMIM_VmQHWgs1Ck&callback=initMap">
+        </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

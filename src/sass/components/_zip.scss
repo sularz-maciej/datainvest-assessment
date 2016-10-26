@@ -3,12 +3,12 @@
     font-weight: bold;
 
     position: absolute;
-    z-index: 100;
+    z-index: 999;
     bottom: 0;
     left: 50%;
 
     width: 9em;
-    height: 50%;
+    height: 45%;
     margin: 0 -4.5em;
 
     text-align: center;
@@ -22,12 +22,21 @@
             z-index: 10;
 
             margin-bottom: .75em;
+
+            color: $color-black;
         }
         .slider
         {
-            z-index: 10;
-
             margin-bottom: .75em;
+
+            background: url('../img/zip-white.png') no-repeat center center;
+            & > image
+            {
+                width: 30px;
+                height: 47px;
+
+                opacity: 1;
+            }
         }
     }
     .zip,
@@ -50,6 +59,7 @@
     {
         height: 80%;
 
+        opacity: 0;
         background-color: rgba(0,0,0,.4);
     }
 }

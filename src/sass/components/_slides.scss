@@ -69,12 +69,157 @@
        -moz-transform: translate(0, 100%);
         -ms-transform: translate(0, 100%);
             transform: translate(0, 100%);
-    .contact
+    .container-fluid,
+    .row
     {
-        background: blue;
+        height: 100%;
     }
-    .map
+}
+
+#go-up
+{
+    position: absolute;
+    bottom: 4em;
+    left: 50%;
+
+    width: 70px;
+    height: 70px;
+    margin-left: -35px;
+    & > img
     {
-        background: red;
+        width: 100%;
+        height: auto;
     }
+}
+
+#contact
+{
+    height: 100%;
+
+    background: url('../img/dark-stick-with-a-circle.png') no-repeat 20% 0;
+    form
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        width: 30em; // 480px
+        height: 11.875em; // 190px
+        margin-top: -6em; // To offset it to the center
+        margin-left: -15em; // To offset it to the center
+        input,
+        button
+        {
+            height: 3.375em; // 54px
+
+            text-transform: uppercase;
+
+            color: $color-yellow;
+            border-radius: 0; // Remove bootstrap styling
+            background: transparent;
+            background-color: transparent;
+            text-shadow: none;
+        }
+        label
+        {
+            font-family: $font-days-one;
+            font-size: 3.2em;
+
+            width: 100%;
+
+            text-align: center;
+            text-transform: uppercase;
+        }
+        button
+        {
+            padding: 1em 2em;
+
+            border-color: $color-yellow;
+            i
+            {
+                margin-left: .5em;
+            }
+            &:hover
+            {
+                // Play with it - it's just so that 
+                // the button does not seem 'dead'
+                color: lighten($color-yellow, 10%);
+                border-color: lighten($color-yellow, 10%);
+            }
+        }
+        input
+        {
+            border: none;
+            background-color: $color-dark-grey;
+            &:focus
+            {
+                box-shadow: 0 0 5px $color-yellow; // lets make the colors consistent
+            }
+            &::-webkit-input-placeholder
+            {
+                /* Chrome/Opera/Safari */
+                text-transform: uppercase;
+
+                color: $color-yellow;
+            }
+            &::-moz-placeholder
+            {
+                /* Firefox 19+ */
+                text-transform: uppercase;
+
+                color: $color-yellow;
+            }
+            &:-ms-input-placeholder
+            {
+                /* IE 10+ */
+                text-transform: uppercase;
+
+                color: $color-yellow;
+            }
+            &:-moz-placeholder
+            {
+                /* Firefox 18- */
+                text-transform: uppercase;
+
+                color: $color-yellow;
+            }
+        }
+    }
+}
+
+#map
+{
+    height: 100%;
+    padding: 0;
+
+    weight: 100%;
+    .address
+    {
+        position: absolute;
+        z-index: 999;
+        bottom: 10em;
+        left: 3em;
+
+        width: 35%;
+        padding: 2em;
+
+        border-left: .375em solid $color-yellow; // 6px
+        background-color: rgba(00, 00, 00, .6);
+        a
+        {
+            text-decoration: none;
+
+            color: $color-yellow;
+            &[href*='tel'] // The [attribute*=value] selector matches every element whose attribute value containing a specified value.
+            {
+                color: $color-white;
+            }
+        }
+    }
+}
+
+#map-container
+{
+    width: 100%;
+    height: 100%;
 }
