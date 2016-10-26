@@ -5,13 +5,13 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
         <title>AIRBOT | Home</title>
         <meta name="description" content="An assessment project for Data Invest Sp. z o.o. S.K.A.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        <link href="https://fonts.googleapis.com/css?family=Days+One|Ubuntu" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Days+One%7CUbuntu" rel="stylesheet">
         
         <!-- 
           Use grunt to concatenate all vendor styles into 
@@ -94,7 +94,7 @@
               <!-- /slide 0 -->
               <!-- slide 1 -->
               <div id="slide-1" class="slide">
-                <video playsinline autoplay muted loop poster="img/bgvid.png" id="bgvid">
+                <video autoplay muted loop poster="img/bgvid.png" id="bgvid">
                     <!-- There once was a bug in Chrome concerning webm source placed 
                          after other sources. So it grabs the first spot. -->
                     <source src="media/bgvid.webm" type="video/webm">
@@ -120,11 +120,8 @@
                     </div>
                   </div>
                   <div class="zip" data-0="opacity: 0" data-96p=""  data-97p="opacity: 1">
-                    <div class="scroll-progress"
-                      data-0="height: 10%";
-                      data-100p=""
-                      data-200p="height: 100%"
-                    ></div>
+                    <div class="scroll-progress" data-0="height: 10%" 
+                         data-100p="" data-200p="height: 100%"></div>
                   </div>
                 </div>
               </div>
