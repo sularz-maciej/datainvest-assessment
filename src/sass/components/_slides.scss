@@ -47,13 +47,20 @@
     }
 }
 
+// Stuff related to the animation
+@import 'i-can-fly';
+
 #slide-1
 {
-    overflow: hidden;
+    overflow: hidden; // important, the bgvid will overflow otherwise
     // Using the very first frame of the background video here
 
     background: url('../img/bgvid.png') no-repeat center center;
     background-size: cover;
+    .caption
+    {
+        margin-left: -52em; // hide it initially
+    }
 }
 
 #slide-2

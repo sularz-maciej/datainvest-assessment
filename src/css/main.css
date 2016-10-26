@@ -48,13 +48,13 @@ video {
   display: block; }
 
 #header {
-  position: absolute;
+  position: fixed;
   z-index: 500;
   top: 0;
   left: 0;
   width: 100%;
   min-width: 100%;
-  margin-top: 2em;
+  margin-top: -5em;
   padding: 0 2em; }
   #header .logo {
     max-width: 260px; }
@@ -118,10 +118,40 @@ video {
         /* 20px */
         max-width: 85%; }
 
+#slides {
+  perspective: 500px; }
+
+#i-can-fly {
+  z-index: 999;
+  transform-origin: 0 0 0;
+  background: url("../img/i-can-fly.svg") no-repeat center center;
+  background-size: cover; }
+
+#i-can-fly-helper {
+  position: absolute;
+  z-index: 999999;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 400%; }
+  #i-can-fly-helper .marker {
+    width: 100%;
+    height: 25%; }
+  #i-can-fly-helper .red {
+    background-color: red; }
+  #i-can-fly-helper .green {
+    background-color: green; }
+  #i-can-fly-helper .blue {
+    background-color: blue; }
+  #i-can-fly-helper .yellow {
+    background-color: yellow; }
+
 #slide-1 {
   overflow: hidden;
   background: url("../img/bgvid.png") no-repeat center center;
   background-size: cover; }
+  #slide-1 .caption {
+    margin-left: -52em; }
 
 #slide-2 {
   -webkit-transform: translate(0, 100%);
@@ -159,12 +189,18 @@ video#bgvid {
   margin: 0 -4.5em;
   text-align: center;
   text-transform: uppercase; }
-  #zip-container .text {
-    margin-bottom: .75em; }
-  #zip-container .slider {
-    margin-bottom: .75em; }
+  #zip-container .slider-container {
+    height: 20%;
+    min-height: 5.375em; }
+    #zip-container .slider-container .text {
+      z-index: 10;
+      margin-bottom: .75em; }
+    #zip-container .slider-container .slider {
+      z-index: 10;
+      margin-bottom: .75em; }
   #zip-container .zip,
   #zip-container .scroll-progress {
+    z-index: 5;
     width: .75em;
     margin: 0 auto; }
   #zip-container .scroll-progress {
@@ -173,35 +209,7 @@ video#bgvid {
     border-radius: 0;
     background-color: #f2d543; }
   #zip-container .zip {
-    height: 100%;
+    height: 80%;
     background-color: rgba(0, 0, 0, 0.4); }
-
-#slides {
-  perspective: 500px; }
-
-#i-can-fly {
-  z-index: 999;
-  transform-origin: 0 0 0;
-  background: url("../img/slide-0.svg") no-repeat center center;
-  background-size: cover; }
-
-#i-can-fly-helper {
-  position: absolute;
-  z-index: 999999;
-  top: 0;
-  left: 0;
-  width: 25px;
-  height: 400%; }
-  #i-can-fly-helper .marker {
-    width: 100%;
-    height: 25%; }
-  #i-can-fly-helper .red {
-    background-color: red; }
-  #i-can-fly-helper .green {
-    background-color: green; }
-  #i-can-fly-helper .blue {
-    background-color: blue; }
-  #i-can-fly-helper .yellow {
-    background-color: yellow; }
 
 /*# sourceMappingURL=main.css.map */

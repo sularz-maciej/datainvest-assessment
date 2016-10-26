@@ -1,13 +1,13 @@
 #header
 {
-    position: absolute;
+    position: fixed;
     z-index: 500;
     top: 0;
     left: 0;
 
     width: 100%;
     min-width: 100%;
-    margin-top: 2em;
+    margin-top: -5em; // hide initially
     padding: 0 2em;
     .logo
     {
