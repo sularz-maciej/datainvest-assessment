@@ -47,35 +47,27 @@
     }
 }
 
-video#bgvid
-{
-    position: fixed;
-    z-index: -100;
-    top: 50%;
-    left: 50%;
-
-    width: auto;
-    min-width: 100%;
-    height: auto;
-    min-height: 100%;
-
-    -webkit-transform: translateX(-50%) translateY(-50%);
-       -moz-transform: translateX(-50%) translateY(-50%);
-        -ms-transform: translateX(-50%) translateY(-50%);
-            transform: translateX(-50%) translateY(-50%);
-
-    background: url(polina.jpg) no-repeat;
-    background-size: cover;
-}
-
 #slide-1
 {
+    overflow: hidden;
     // Using the very first frame of the background video here
+
     background: url('../img/bgvid.png') no-repeat center center;
     background-size: cover;
 }
 
 #slide-2
 {
-    transform: translate(0, 100%);
+    -webkit-transform: translate(0, 100%);
+       -moz-transform: translate(0, 100%);
+        -ms-transform: translate(0, 100%);
+            transform: translate(0, 100%);
+    .contact
+    {
+        background: blue;
+    }
+    .map
+    {
+        background: red;
+    }
 }

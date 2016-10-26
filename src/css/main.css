@@ -49,7 +49,7 @@ video {
 
 #header {
   position: absolute;
-  z-index: 9999;
+  z-index: 500;
   top: 0;
   left: 0;
   width: 100%;
@@ -118,37 +118,45 @@ video {
         /* 20px */
         max-width: 85%; }
 
+#slide-1 {
+  overflow: hidden;
+  background: url("../img/bgvid.png") no-repeat center center;
+  background-size: cover; }
+
+#slide-2 {
+  -webkit-transform: translate(0, 100%);
+  -moz-transform: translate(0, 100%);
+  -ms-transform: translate(0, 100%);
+  transform: translate(0, 100%); }
+  #slide-2 .contact {
+    background: blue; }
+  #slide-2 .map {
+    background: red; }
+
 video#bgvid {
-  position: fixed;
-  z-index: -100;
+  position: absolute;
   top: 50%;
   left: 50%;
   width: auto;
   min-width: 100%;
   height: auto;
   min-height: 100%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  background: url(polina.jpg) no-repeat;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: url("../img/bgvid.png") no-repeat;
   background-size: cover; }
-
-#slide-1 {
-  background: url("../img/bgvid.png") no-repeat center center;
-  background-size: cover; }
-
-#slide-2 {
-  transform: translate(0, 100%); }
 
 #zip-container {
   font-weight: bold;
   position: absolute;
+  z-index: 100;
   bottom: 0;
   left: 50%;
   width: 9em;
-  height: 60%;
-  margin: -4.5em;
+  height: 50%;
+  margin: 0 -4.5em;
   text-align: center;
   text-transform: uppercase; }
   #zip-container .text {
@@ -158,7 +166,6 @@ video#bgvid {
   #zip-container .zip,
   #zip-container .scroll-progress {
     width: .75em;
-    height: 100%;
     margin: 0 auto; }
   #zip-container .scroll-progress {
     height: 10%;
@@ -166,6 +173,35 @@ video#bgvid {
     border-radius: 0;
     background-color: #f2d543; }
   #zip-container .zip {
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.4); }
+
+#slides {
+  perspective: 500px; }
+
+#i-can-fly {
+  z-index: 999;
+  transform-origin: 0 0 0;
+  background: url("../img/slide-0.svg") no-repeat center center;
+  background-size: cover; }
+
+#i-can-fly-helper {
+  position: absolute;
+  z-index: 999999;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 400%; }
+  #i-can-fly-helper .marker {
+    width: 100%;
+    height: 25%; }
+  #i-can-fly-helper .red {
+    background-color: red; }
+  #i-can-fly-helper .green {
+    background-color: green; }
+  #i-can-fly-helper .blue {
+    background-color: blue; }
+  #i-can-fly-helper .yellow {
+    background-color: yellow; }
 
 /*# sourceMappingURL=main.css.map */

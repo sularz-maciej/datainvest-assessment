@@ -12,7 +12,8 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <link href="https://fonts.googleapis.com/css?family=Days+One|Ubuntu" rel="stylesheet">
-
+        
+        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
@@ -30,6 +31,7 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+        <!-- header -->
         <div id="header">
           <div class="logo pull-left">
             <a href="/">
@@ -50,11 +52,26 @@
             </ul>
           </div>
         </div>
+        <!-- /header -->
         <div id="page-content">
           <div id="slides-container">
-            <div id="slides">
+            <div id="slides"
+              data-0="transform:translate(0%,0%);"
+              data-200p=""
+              data-300p="transform:translate(0%,-100%);"
+            >
+
+              <!-- slide 0 -->
+              <div id="i-can-fly" class="slide"
+                data-0="transform: translate3d(0px, 0px, 0px)"
+                data-100p="transform: translate3d(0px, 100px, 500px)"
+              ></div>
+              <!-- /slide 0 -->
+
+              <!-- slide 1 -->
               <div id="slide-1" class="slide">
-                <video playsinline autoplay muted loop poster="img/bgvid.png" id="bgvid" style="display:none">
+                <video playsinline autoplay muted loop poster="img/bgvid.png" id="bgvid">
+                    <source src="media/bgvid.webm" type="video/webm">
                     <source src="media/bgvid.mp4" type="video/mp4">
                 </video>
                 <div class="caption">
@@ -79,16 +96,46 @@
                   </div>
                 </div>
               </div>
-              <div id="slide-2" class="slide">
+              <!-- /slide 1 -->
 
+              <!-- slide 2 -->
+              <div id="slide-2" class="slide">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-6 contact">
+                    asdf
+                  </div>
+                  <div class="col-md-6 map">
+                    asdf
+                  </div>
+                </div>
               </div>
+              </div>
+              <!-- /slide 2 -->
+
             </div>
           </div>
         </div>
 
+
+        
+        <!-- That just shows the progress -->
+        <div id="i-can-fly-helper">
+            <div class="marker red"></div>
+            <div class="marker green"></div>
+            <div class="marker blue"></div>
+            <div class="marker yellow"></div>
+        </div>
+
+
+
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/skrollr.min.js"></script>
+        <script>
+          var s = skrollr.init();
+        </script>
 
         <script src="js/main.js"></script>
 

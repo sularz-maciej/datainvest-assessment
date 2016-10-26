@@ -1,0 +1,48 @@
+
+#slides
+{
+    perspective: 500px; // Allows for transform: translate3d()
+}
+
+#i-can-fly
+{
+    z-index: 999; // I can fly so I'm on top!
+
+    transform-origin: 0 0 0;
+
+    background: url('../img/slide-0.svg') no-repeat center center; // Using the very first frame of the background video here
+    background-size: cover;
+}
+
+// controlls the markers
+#i-can-fly-helper
+{
+    position: absolute;
+    z-index: 999999;
+    top: 0;
+    left: 0;
+
+    width: 25px;
+    height: 400%;
+    .marker
+    {
+        width: 100%;
+        height: 25%;
+    }
+    .red
+    {
+        background-color: red;
+    }
+    .green
+    {
+        background-color: green;
+    }
+    .blue
+    {
+        background-color: blue;
+    }
+    .yellow
+    {
+        background-color: yellow;
+    }
+}

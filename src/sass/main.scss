@@ -4,7 +4,12 @@
 // Global styling
 @import 'components/global';
 
+
 // Components styling
 @import 'components/header';
 @import 'components/slides';
+@import 'components/bgvid';
 @import 'components/zip';
+
+// Stuff related to the animation
+@import 'components/fly-through';

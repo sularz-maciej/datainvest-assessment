@@ -3,12 +3,13 @@
     font-weight: bold;
 
     position: absolute;
+    z-index: 100;
     bottom: 0;
     left: 50%;
 
     width: 9em;
-    height: 60%;
-    margin: -4.5em;
+    height: 50%;
+    margin: 0 -4.5em;
 
     text-align: center;
     text-transform: uppercase;
@@ -24,7 +25,6 @@
     .scroll-progress
     {
         width: .75em;
-        height: 100%;
         margin: 0 auto;
     }
     .scroll-progress
@@ -37,6 +37,8 @@
     }
     .zip
     {
+        height: 100%;
+
         background-color: rgba(0,0,0,.4);
     }
 }
