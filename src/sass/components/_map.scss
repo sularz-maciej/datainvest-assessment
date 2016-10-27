@@ -1,0 +1,42 @@
+#map-container
+{
+    height: 100%;
+    padding: 0;
+    .address
+    {
+        position: absolute;
+        z-index: 999;
+        bottom: 10em;
+        left: 3em;
+
+        width: 35%;
+        padding: 2em;
+
+        border-left: .375em solid $color-yellow; // 6px
+        background-color: rgba(00, 00, 00, .6);
+        a
+        {
+            text-decoration: none;
+
+            color: $color-yellow;
+            &[href*='tel'] // The [attribute*=value] selector matches every element whose attribute value containing a specified value.
+            {
+                color: $color-white;
+                &:hover
+                {
+                    color: $color-white;
+                }
+            }
+            &:hover
+            {
+                color: lighten($color-yellow, 10%);
+            }
+        }
+    }
+}
+
+#map
+{
+    width: 100%;
+    height: 100%;
+}

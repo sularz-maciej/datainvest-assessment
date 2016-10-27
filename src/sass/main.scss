@@ -10,11 +10,9 @@
 // This is just the initial version and would require
 // more time to optimize and polsih it off.
 // 
-// Variables
 @import 'variables';
-
-// Global styling
-@import 'components/global';
+@import 'fonts';
+@import 'global';
 
 // Components styling
 @import 'components/header';

@@ -20,7 +20,6 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -40,14 +39,14 @@
         <![endif]-->
 
         <!-- header -->
-        <header id="header" data-0="margin-top: -5em" data-105p="" data-110p="margin-top: 2em">
+        <header id="header" data-0="margin-top: -5em" data-105p="" data-110p="margin-top: 2.5em">
           <div class="logo pull-left">
             <a href="/">
               <!-- 
                 using an oversized logo in order to assure superb 
                 quality on displays with higher pixel density (retina, 4k)
               -->
-              <img src="img/logo@2x.png" alt="Airbot logo image.">
+              <img src="img/logo.png" alt="Airbot logo image.">
             </a>
           </div>
           <nav class="menu pull-right">
@@ -100,7 +99,7 @@
                          after other sources. So if any problems - check it out!. -->
                     <source src="media/bgvid.webm" type="video/webm">
                 </video>
-                <div class="caption" data-0="margin-left: -52em" data-100p="" data-110p="margin-left: 2em">
+                <div class="caption" data-0="margin-left: -52em" data-100p="" data-110p="margin-left: 3em">
                   <h1>We provide exciting<br />and immersive experiences</h1>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales purus eu dignissim condimentum. 
@@ -108,14 +107,14 @@
                     fames ac turpis egestas. Pellentesque luctus lacinia ex lobortis aliquam.
                   </p>
                 </div>
-                <div id="zip-container">
+                <div class="zip-container">
                   <div class="slider-container">
                     <div class="text" data-0="color: rgb(0,0,0)" 
                          data-84p="" data-85p="color: rgb(255,255,255)">
                       Scroll Down
                     </div>
                     <div class="slider">
-                      <img src="img/zip-black@2x.png" alt="Slider" 
+                      <img src="img/zip-black.png" alt="Slider" 
                            data-0="opacity: 1" data-88p="" data-89p="opacity: 0">
                     </div>
                   </div>
@@ -138,10 +137,10 @@
                           <label for="exampleInputEmail1">Stay In Touch</label>
                           <input type="email" class="form-control" id="exampleInputEmail1" placeholder= "Your E-Mail">
                         </div>
-                        <button type="submit" class="btn btn-default">Submit <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+                        <button type="submit" class="btn btn-default"><span>Send</span></button>
                       </form>
                     </div>
-                    <div class="col-md-6" id="map">
+                    <div class="col-md-6" id="map-container">
                       <address class="address">
                         ul. Włocławska 161<br />
                         87-100 Toruń<br />
@@ -149,14 +148,20 @@
                         <a href="tel:+48695810356">+48 695 810 356</a><br />
                         <a href="mailto:contact@airbot.io">contact@airbot.io</a>
                       </address>
-                      <div id="map-container"></div>
+                      <div id="map"></div>
                     </div>
+                  </div>
+                </div>
+                <div class="zip-container">
+                  <div class="zip">
+                    <div class="scroll-progress" data-0="height: 0%" 
+                        data-200p="" data-300p="height: 100%"></div>
                   </div>
                 </div>
                 <a href="#" id="go-up">
                   <!-- Don't want to scroll all the way up? No PRAAABLEM! 
                        Just clicke me relax :D -->
-                  <img src="img/go-to-top@2x.png" alt="Go back to top">
+                  <img src="img/go-to-top.png" alt="Go back to top">
                 </a>
               </div>
               <!-- /slide 2 -->
@@ -169,7 +174,7 @@
           to the div below (#i-can-fly-helper-info). All related JS can
           be found in the js/main.js file. Happy breakpointing!
         -->
-        <div id="i-can-fly-helper-info">0</div>
+        <div id="i-can-fly-helper-info" enabled>0</div>
         <div id="i-can-fly-helper">
             <div class="marker"></div>
             <div class="marker"></div>

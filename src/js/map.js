@@ -1,8 +1,8 @@
 /*
 * @Author: Maciej Sularz
 * @Date:   2016-10-26 18:03:55
-* @Last Modified by:   Maciej
-* @Last Modified time: 2016-10-26 22:24:28
+* @Last Modified by:   Maciej Sularz
+* @Last Modified time: 2016-10-27 19:56:05
 */
 
 
@@ -227,7 +227,7 @@ function initMap() {
 	// Coordinates
 	var airbot = { lat: 52.989480, lng: 18.666025 };
 	// Instantiate the map
-	var map = new google.maps.Map(document.getElementById('map-container'), {
+	var map = new google.maps.Map(document.getElementById('map'), {
 		zoom: 15,
 		center: airbot,
 		styles: styles,

@@ -7,7 +7,7 @@ body
 
 body
 {
-    font-family: $font-ubuntu;
+    font-family: $paragraph-font;
     /* Set a default font size to 16, 14px just does 
      * not seem big enough. Converting pixels to ems 
      * and rems made easy :D
@@ -15,10 +15,15 @@ body
      * 100px = 6.25em
      *  80px = 5em
      *  60px = 3.75em
+     *  54px = 3.375em
      *  50px = 3.125em
      *  48px = 3em
      *  40px = 2.5em
+     *  36px = 2.250em
+     *  30px = 1.875em
+     *  26px = 1.625em
      *  20px = 1.25em
+     *  18px = 1.125em
      *  14px = 0.875em
      *  12px = 0.75em
      *  10px = 0.625em

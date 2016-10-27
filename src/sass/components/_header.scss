@@ -10,10 +10,10 @@
     // Hide the header initially, allow skrollr to animate it. 
     // It shows through our awesome YELLOW welcome slide otherwise ;-(
     margin-top: -5em;
-    padding: 0 2em;
+    padding: .875em 3.875em 0 3.875em;
     .logo
     {
-        max-width: 260px;
+        max-width: 270px;
         img
         {
             // We don't want this to exceed the maximum 
@@ -27,7 +27,9 @@
     }
     .menu
     {
-        margin-top: .6em;
+        font-size: .75em;
+
+        margin-top: 1.85em;
         ul
         {
             margin: 0;
