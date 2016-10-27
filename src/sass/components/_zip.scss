@@ -30,14 +30,11 @@
             margin-bottom: .75em;
 
             background: url('../img/zip-white.png') no-repeat center center;
+            // TODO: breakpoint replacing the image for 2x bigger for high density screens
+            // Retina-specific stuff here
+            // TODO: Do this for all images ;-D
+            // background: url('../img/zip-white@2x.png') no-repeat center center;
             background-size: 30px 47px;
-            // breakpoint replacing the image for 2x bigger for high density screens
-            @media(-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi)
-            {
-                // Retina-specific stuff here
-                // TODO: Do this for all images ;-D
-                background: url('../img/zip-white@2x.png') no-repeat center center;
-            }
             & > img
             {
                 // Retina business.

@@ -300,9 +300,6 @@ video {
       margin-bottom: .75em;
       background: url("../img/zip-white.png") no-repeat center center;
       background-size: 30px 47px; }
-      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-        .zip-container .slider-container .slider {
-          background: url("../img/zip-white@2x.png") no-repeat center center; } }
       .zip-container .slider-container .slider > img {
         max-width: 30px;
         max-height: 47px;
