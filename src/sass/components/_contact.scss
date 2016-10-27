@@ -53,15 +53,20 @@
                 // the button does not seem 'dead'
                 color: lighten($color-yellow, 10%);
                 border-color: lighten($color-yellow, 10%);
+                & > span:after
+                {
+                    // hover effect for the arrow
+                    background: url('../img/arrow-right-yellow-hover.png') no-repeat center left;
+                }
             }
             & > span
             {
                 &:after
                 {
                     margin-left: .625em;
-                    padding-left: 34px;
+                    padding-left: 33px;
 
-                    content: '\0000a0'; // thats a space
+                    content: '\0000a0'; // that's a non breaking space to force the element to show
 
                     background: url('../img/arrow-right-yellow.png') no-repeat center left;
                 }

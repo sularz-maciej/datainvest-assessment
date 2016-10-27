@@ -8,6 +8,9 @@
     width: 70px;
     height: 70px;
     margin-left: -35px;
+    // I'm forcing the browser to download both graphics on load
+    // this prevents the button from dissapearing until the hover
+    // graphic has downloaded. 
 
     background-image: url('../img/go-to-top-hover.png');
     & > img
@@ -19,6 +22,7 @@
     }
     &:hover > img
     {
+        // We are revealing the 'background-image' on hover :D
         visibility: hidden;
     }
 }

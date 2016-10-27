@@ -14,6 +14,11 @@
     // while flying through it... Perhaps I need to spend more time figuring out how to
     // use svg's potential together with transform3d(); It occurs to me that it might not
     // be supported yet.
+    // 
+    // UPDATE:
+    // The blury effect occurs due to the hardware accelleration that is being utilized
+    // by css animations - transform in particular. The animated svg is being converted
+    // to a bitmap before the animation applies... 
 
     background: url('../img/i-can-fly.svg') no-repeat center center;
     background-size: cover; // important to stretch it like that ;-)
@@ -38,7 +43,7 @@
     {
         width: 100%;
         height: 25%; // 25% of 400% = 100%
-        &:nth-child(4n+1) // Just play with it if you need more :D You see the pattern
+        &:nth-child(4n+1) // Just play with it if you need more colors :D You see the pattern
         {
             background-color: red;
         }

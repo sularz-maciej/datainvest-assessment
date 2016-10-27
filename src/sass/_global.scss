@@ -36,23 +36,23 @@ body
     background-color: $color-grey;
 }
 
-/* 
- * VIDEO TAG IN THE OLDER IEs
- * Not only does IE8 not recognize the <video> tag, it fails to recognize any 
- * HTML5 at all, ignoring every new element in the spec. This is problematic, 
- * as we want to be able to at least style the element  in  the  browser  and 
- * place a background image in it. To do so, we need two things:
- * a single line of JavaScript, inside a conditional comment:
- 
-    <!--[if lt IE 9]>
-    <script>
-        document.createElement('video');
-    </script>
-    <![endif]-->
 
- * And a declaration that allows IE to understand that this is a block-level 
- * element:
- */
+// VIDEO TAG IN THE OLDER IEs
+// Not only does IE8 not recognize the <video> tag, it fails to recognize any 
+// HTML5 at all, ignoring every new element in the spec. This is problematic, 
+// as we want to be able to at least style the element  in  the  browser  and 
+// place a background image in it. To do so, we need two things:
+// a single line of JavaScript, inside of a conditional comment:
+
+//    <!--[if lt IE 9]>
+//    <script>
+//        document.createElement('video');
+//    </script>
+//    <![endif]-->
+
+// And a declaration that allows IE to understand that this is a block-level 
+// element:
+
 video
 {
     /* allows IE to understand that this is a block-level element */
