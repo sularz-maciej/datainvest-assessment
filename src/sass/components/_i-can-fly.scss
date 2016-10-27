@@ -33,7 +33,7 @@
     visibility: hidden; // We don't want to see it in production, we just want it to work :D
 
     width: 5px; // Could be 1 px but 5px is beeter than 1px, isn't it!?
-    height: 400%; // The more slides/animations the bigger the number here!
+    height: 450%; // The more slides/animations the bigger the number here!
     .marker // these bad boys are here just to help us see what is skrollr doing!
     {
         width: 100%;

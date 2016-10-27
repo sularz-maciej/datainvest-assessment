@@ -8,6 +8,12 @@
     width: 70px;
     height: 70px;
     margin-left: -35px;
+
+    background-image: url('../img/go-to-top.png');
+    &:hover
+    {
+        background-image: url('../img/go-to-top-hover.png');
+    }
     & > img
     {
         width: 100%; // Scale the oversized image to fit the container.

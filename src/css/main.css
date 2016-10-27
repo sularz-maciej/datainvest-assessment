@@ -166,7 +166,7 @@ video {
   left: 0;
   visibility: hidden;
   width: 5px;
-  height: 400%; }
+  height: 450%; }
   #i-can-fly-helper .marker {
     width: 100%;
     height: 25%; }
@@ -352,7 +352,10 @@ video {
   left: 50%;
   width: 70px;
   height: 70px;
-  margin-left: -35px; }
+  margin-left: -35px;
+  background-image: url("../img/go-to-top.png"); }
+  #go-up:hover {
+    background-image: url("../img/go-to-top-hover.png"); }
   #go-up > img {
     width: 100%;
     height: auto; }
