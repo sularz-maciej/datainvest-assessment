@@ -9,14 +9,16 @@
     height: 70px;
     margin-left: -35px;
 
-    background-image: url('../img/go-to-top.png');
-    &:hover
-    {
-        background-image: url('../img/go-to-top-hover.png');
-    }
+    background-image: url('../img/go-to-top-hover.png');
     & > img
     {
+        visibility: visible;
+
         width: 100%; // Scale the oversized image to fit the container.
         height: auto;
+    }
+    &:hover > img
+    {
+        visibility: hidden;
     }
 }

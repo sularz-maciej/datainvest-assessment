@@ -353,11 +353,12 @@ video {
   width: 70px;
   height: 70px;
   margin-left: -35px;
-  background-image: url("../img/go-to-top.png"); }
-  #go-up:hover {
-    background-image: url("../img/go-to-top-hover.png"); }
+  background-image: url("../img/go-to-top-hover.png"); }
   #go-up > img {
+    visibility: visible;
     width: 100%;
     height: auto; }
+  #go-up:hover > img {
+    visibility: hidden; }
 
 /*# sourceMappingURL=main.css.map */
